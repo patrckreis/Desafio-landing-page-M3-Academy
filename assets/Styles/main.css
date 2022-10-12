@@ -90,6 +90,27 @@ body {
   line-height: 24px;
 }
 
+.img-baixo {
+  background: #e0e0e0;
+}
+.wrapper {
+  justify-content: center;
+  gap: 39px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: relative;
+  top: 62px;
+  padding: 0 72px;
+}
+
+.notebook-baixo {
+  width: 100%;
+}
+
+.section3 {
+  height: 500px;
+  background: rgb(219, 196, 196);
+}
 @media screen and (max-width: 1180px) {
   .top-titulo-h2 {
     font-size: 20px;
