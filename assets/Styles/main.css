@@ -145,6 +145,35 @@ body {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .notebook-esquerda-mobile {
+    width: 177px;
+    grid-area: header;
+  }
+  .notebook-centro-mobile {
+    width: 370px;
+    grid-area: menu;
+  }
+  .notebook-direita-mobile {
+    width: 177px;
+    grid-area: main;
+  }
+
+  .wrapper {
+    padding: 0 23px;
+    top: 32px;
+    column-gap: 14px;
+    row-gap: 23px;
+    grid-template-columns: none;
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas:
+      "header main"
+      "menu menu "
+      "menu menu ";
+  }
+}
+
 @media screen and (max-width: 414px) {
   .banner-principal-desktop {
     display: none;
@@ -154,5 +183,20 @@ body {
 @media screen and (min-width: 415px) {
   .banner-principal-mobile {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .notebook-esquerda-mobile {
+    width: 100%;
+    grid-area: header;
+  }
+  .notebook-centro-mobile {
+    width: 100%;
+    grid-area: menu;
+  }
+  .notebook-direita-mobile {
+    width: 100%;
+    grid-area: main;
   }
 }
