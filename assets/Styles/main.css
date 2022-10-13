@@ -111,6 +111,62 @@ body {
   height: 500px;
   background: rgb(219, 196, 196);
 }
+
+.infocard-baixo {
+  background: white;
+  padding: 191px 72px;
+  display: grid;
+  grid-template-columns: 432px 432px 432px 432px;
+  gap: 16px;
+  justify-content: center;
+}
+.card-baixo {
+  padding: 65px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+}
+
+.cards-de-baixo {
+  margin-bottom: 27px;
+}
+
+.paragrafos-baixo {
+  max-width: 367px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.very-low-titulo-h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.very-low-paragrafo {
+  text-align: center;
+  max-width: 550px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.very-low-infocard {
+  background: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.very-low-img {
+  padding: 50px 280px 116px;
+}
+
 @media screen and (max-width: 1180px) {
   .top-titulo-h2 {
     font-size: 20px;
@@ -178,15 +234,7 @@ body {
   .banner-principal-desktop {
     display: none;
   }
-}
 
-@media screen and (min-width: 415px) {
-  .banner-principal-mobile {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 400px) {
   .notebook-esquerda-mobile {
     width: 100%;
     grid-area: header;
@@ -198,5 +246,11 @@ body {
   .notebook-direita-mobile {
     width: 100%;
     grid-area: main;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  .banner-principal-mobile {
+    display: none;
   }
 }
