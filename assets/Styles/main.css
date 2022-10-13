@@ -167,6 +167,30 @@ body {
   padding: 50px 280px 116px;
 }
 
+.page-footer {
+  padding: 38px 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+}
+
+.footer-texto {
+  color: #bdbdbd;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.footer-icons-ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.footer-icon {
+  margin: 0 21px;
+}
+
 @media screen and (max-width: 1180px) {
   .top-titulo-h2 {
     font-size: 20px;
@@ -227,6 +251,10 @@ body {
       "header main"
       "menu menu "
       "menu menu ";
+  }
+  .page-footer {
+    padding: 32px 32px;
+    text-align: center;
   }
 }
 
