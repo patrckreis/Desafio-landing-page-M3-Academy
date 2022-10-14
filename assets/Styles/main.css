@@ -89,8 +89,8 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
-
 .img-baixo {
+  height: 530px;
   background: #e0e0e0;
 }
 .wrapper {
@@ -113,8 +113,7 @@ body {
 }
 
 .infocard-baixo {
-  background: white;
-  padding: 191px 72px;
+  margin: 191px 0px;
   display: grid;
   grid-template-columns: 432px 432px 432px 432px;
   gap: 16px;
@@ -140,7 +139,7 @@ body {
   line-height: 24px;
 }
 
-.very-low-titulo-h1 {
+.very-low-titulo {
   text-align: center;
   font-weight: 600;
   font-size: 32px;
@@ -157,14 +156,18 @@ body {
 }
 
 .very-low-infocard {
-  background: white;
+  padding: 0 32px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .very-low-img {
-  padding: 50px 280px 116px;
+  height: auto;
+  width: 100%;
+  max-width: 1360px;
+  padding: 50px 0 116px;
 }
 
 .page-footer {
@@ -183,12 +186,27 @@ body {
 }
 
 .footer-icons-ul {
+  align-items: center;
   display: flex;
   list-style: none;
   margin-bottom: 16px;
 }
 .footer-icon {
   margin: 0 21px;
+}
+
+.very-low-img-mobile {
+  display: none;
+}
+
+.banner-principal-mobile {
+  display: none;
+}
+
+@media (max-width: 1900px) {
+  .infocard-baixo {
+    grid-template-columns: 432px 432px;
+  }
 }
 
 @media screen and (max-width: 1180px) {
@@ -225,6 +243,46 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .infocard-baixo {
+    grid-template-columns: 432px;
+  }
+
+  .very-low-img {
+    display: none;
+  }
+  .very-low-img-mobile {
+    width: 100%;
+    max-width: 414px;
+    height: auto;
+    display: block;
+  }
+  .very-low-paragrafo {
+    margin: 0 0 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+  }
+  .very-low-titulo {
+    margin: 50px 0 9px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .very-low-infocard {
+    padding: 0;
+  }
+
+  .very-low-div {
+    max-width: 350px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .notebook-esquerda-mobile {
     width: 177px;
@@ -258,11 +316,27 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .infocard-baixo {
+    grid-template-columns: 100%;
+    justify-items: center;
+    padding: 0 16px;
+  }
+  .card-baixo {
+    max-width: 350px;
+    width: 100%;
+    padding: 35px 26px 27px;
+    height: 287px;
+  }
+}
+
 @media screen and (max-width: 414px) {
+  .banner-principal-mobile {
+    display: block;
+  }
   .banner-principal-desktop {
     display: none;
   }
-
   .notebook-esquerda-mobile {
     width: 100%;
     grid-area: header;
@@ -274,11 +348,5 @@ body {
   .notebook-direita-mobile {
     width: 100%;
     grid-area: main;
-  }
-}
-
-@media screen and (min-width: 415px) {
-  .banner-principal-mobile {
-    display: none;
   }
 }
