@@ -113,7 +113,7 @@ body {
 }
 
 .infocard-baixo {
-  margin: 191px 0px;
+  margin: 191px 0px 108px;
   display: grid;
   grid-template-columns: 432px 432px 432px 432px;
   gap: 16px;
@@ -171,6 +171,7 @@ body {
 }
 
 .page-footer {
+  height: 128px;
   padding: 38px 38px;
   display: flex;
   flex-direction: column;
@@ -245,7 +246,9 @@ body {
 
 @media (max-width: 1024px) {
   .infocard-baixo {
-    grid-template-columns: 432px;
+    margin: 112px 0 108px;
+    padding: 0 32px;
+    grid-template-columns: 1fr;
   }
 
   .very-low-img {
@@ -258,7 +261,7 @@ body {
     display: block;
   }
   .very-low-paragrafo {
-    margin: 0 0 32px;
+    margin: 0 0 87px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
